@@ -1,0 +1,13 @@
+html {
+  font-size: $base-size;
+  scroll-behavior: smooth;
+  font-family: $font-primary;
+}
+
+a {
+  background-color: transparent;
+  border: none;
+  color: $text-link-color;
+  text-decoration: none;
+  padding: 0;
+}

@@ -1,0 +1,29 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 96px);
+  gap: 0 16px;
+  justify-content: center;
+  margin: 0 auto;
+
+  @include media-query("xlarge") {
+    grid-template-columns: repeat(9, 96px);
+  }
+
+  @include media-query("large") {
+    grid-template-columns: repeat(6, 96px);
+  }
+
+  @include media-query("medium") {
+    grid-template-columns: repeat(5, 96px);
+  }
+
+  @include media-query("small") {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    margin: 0 16px;
+  }
+}
+
+.grid-item-full-width {
+  grid-column: 1 / -1;
+}

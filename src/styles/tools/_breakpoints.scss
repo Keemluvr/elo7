@@ -1,0 +1,16 @@
+$breakpoints: (
+  "small": 640px,
+  "medium": 768px,
+  "large": 1024px,
+  "xlarge": 1280px,
+);
+
+@mixin media-query($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be found for `#{$breakpoint}` in `$breakpoints` map.";
+  }
+}
