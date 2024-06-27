@@ -25,9 +25,14 @@ export default function Hero() {
           libero eu eros sagittis.
         </p>
 
-        <hr className="grid-item-full-width hero-line" />
+        <hr className="grid-item-full-width hero-horizontal-line" />
 
-        <Link href="#" className="grid-item-full-width hero-button">
+        <Link
+          href="#open-positions"
+          role="button"
+          aria-label="vagas em aberto"
+          className="grid-item-full-width hero-button"
+        >
           vagas em aberto
         </Link>
       </div>

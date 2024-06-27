@@ -34,9 +34,13 @@
   font-size: $medium-size;
   text-align: center;
   margin-bottom: 24px;
+
+  @include media-query("medium") {
+    font-size: $default-size;
+  }
 }
 
-.hero-line {
+.hero-horizontal-line {
   width: 100%;
   color: $primary-border-color;
   margin-bottom: 24px;
