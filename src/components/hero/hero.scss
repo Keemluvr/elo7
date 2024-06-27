@@ -17,10 +17,8 @@
 }
 
 .hero-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include absolute-center-position;
+
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   font-weight: 900;
