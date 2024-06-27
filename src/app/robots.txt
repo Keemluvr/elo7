@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+Sitemap: https://elo7-landing-case.vercel.app/sitemap.xml
