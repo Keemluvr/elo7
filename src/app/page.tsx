@@ -1,3 +1,11 @@
+"use client";
+
+import Hero from "@/components/hero";
+
 export default function Home() {
-  return <main>Elo7</main>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 }
