@@ -9,24 +9,24 @@
   @include media-query("medium") {
     height: 30vw;
   }
-}
 
-.hero-image {
-  object-fit: cover;
-  object-position: center;
-}
+  .hero-image {
+    object-fit: cover;
+    object-position: center;
+  }
 
-.hero-title {
-  @include absolute-center-position;
+  .hero-image-title {
+    @include absolute-center-position;
 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  font-weight: 900;
-  font-size: $huge-size;
-  color: $text-color-huge-light;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-weight: 900;
+    font-size: $huge-size;
+    color: $text-color-huge-light;
 
-  @include media-query("medium") {
-    font-size: $extra-large-size;
+    @include media-query("medium") {
+      font-size: $extra-large-size;
+    }
   }
 }
 
@@ -34,9 +34,11 @@
   font-size: $medium-size;
   text-align: center;
   margin-bottom: 24px;
+  line-height: $huge-large-line-height;
 
   @include media-query("medium") {
     font-size: $default-size;
+    line-height: $medium-line-height;
   }
 }
 

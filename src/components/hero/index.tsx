@@ -2,20 +2,21 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import "./hero.scss";
+import "./style.scss";
 
 export default function Hero() {
   return (
     <section>
-      <div className=" hero-image-wrapper ">
+      <div className="hero-image-wrapper">
         <Image
           className="hero-image"
           src="/hero.webp"
           alt="Equipe de colaboradores celebrando e batendo as mãos em um ambiente de escritório, destacando a cultura de trabalho colaborativa e positiva da empresa."
+          quality={100}
           fill
           priority
         />
-        <h1 className="hero-title">trabalhe no elo7</h1>
+        <h1 className="hero-image-title">trabalhe no elo7</h1>
       </div>
       <div className="grid-container">
         <p className="grid-item-full-width hero-description">
