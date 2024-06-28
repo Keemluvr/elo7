@@ -1,7 +1,5 @@
 .saleswoman-review-wrapper {
   background-color: $secondary-background-color;
-  padding-top: 80px;
-  padding-bottom: 80px;
   width: calc(100% - $side-padding * 2);
 
   .saleswoman-review-content {
@@ -10,6 +8,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 40px;
+    padding: 80px 0;
 
     @include media-query("large") {
       grid-template-columns: repeat(1, 1fr);
@@ -41,7 +40,6 @@
       }
 
       .saleswoman-review-title {
-        color: $text-color;
         line-height: $huge-large-line-height;
         font-size: $large-size;
       }

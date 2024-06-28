@@ -1,0 +1,22 @@
+.team-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: $extra-large-size;
+  margin-bottom: 32px;
+}
+
+.team-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 16px;
+
+  @include media-query("large") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-query("small") {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

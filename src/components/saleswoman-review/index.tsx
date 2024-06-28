@@ -1,17 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import "./style.scss";
 
 export default function SaleswomanReview() {
   return (
     <section className="grid-container saleswoman-review-wrapper">
-      <div className=" grid-item-full-width saleswoman-review-content">
+      <div className="grid-item-full-width saleswoman-review-content">
         <div className="saleswoman-review-image-wrapper">
           <Image
             className="saleswoman-review-image"
-            src="/saleswoman.webp"
+            src="/images/saleswoman.webp"
             alt="Uma mulher jovem trabalha em uma oficina de artesanato, concentrada em suas atividades. A mesa está repleta de ferramentas e materiais de trabalho, destacando um ambiente criativo e artesanal."
             quality={100}
             loading="lazy"

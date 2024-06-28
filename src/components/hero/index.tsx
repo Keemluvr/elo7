@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="hero-image-wrapper">
         <Image
           className="hero-image"
-          src="/hero.webp"
+          src="/images/hero.webp"
           alt="Equipe de colaboradores celebrando e batendo as mãos em um ambiente de escritório, destacando a cultura de trabalho colaborativa e positiva da empresa."
           quality={100}
           fill
