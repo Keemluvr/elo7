@@ -1,0 +1,70 @@
+.saleswoman-review-wrapper {
+  background-color: $secondary-background-color;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: calc(100% - $side-padding * 2);
+
+  .saleswoman-review-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 40px;
+
+    @include media-query("large") {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .saleswoman-review-image-wrapper {
+      position: relative;
+      max-width: 644px;
+      width: 100%;
+      height: 264px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 16px;
+      }
+    }
+
+    .saleswoman-review-description {
+      color: $text-color-light;
+
+      hgroup {
+        display: grid;
+        gap: 4px;
+        margin-bottom: 24px;
+        font-weight: 700;
+      }
+
+      .saleswoman-review-title {
+        color: $text-color;
+        line-height: $huge-large-line-height;
+        font-size: $large-size;
+      }
+
+      .saleswoman-review-subtitle {
+        color: $text-subtitle-color;
+        line-height: $medium-line-height;
+      }
+
+      .saleswoman-review-subtitle,
+      p {
+        font-weight: 700;
+        font-size: $small-size;
+      }
+
+      p {
+        line-height: $huge-line-height;
+
+        @include media-query("medium") {
+          font-size: $default-size;
+          line-height: $medium-line-height;
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,15 @@
 $base-size: 16px;
-$default-size: 1rem; // 16px / 16px
-$small-size: 1.25rem; // 20px / 16px
-$medium-size: 1.5rem; // 24px / 16px
-$large-size: 1.625rem; // 26px / 16px
-$extra-large-size: 1.875rem; // 30px / 16px
-$huge-size: 5rem; // 80px / 16px
+
+$default-size: calc(16px / $base-size) + rem;
+$small-size: calc(20px / $base-size) + rem;
+$medium-size: calc(24px / $base-size) + rem;
+$large-size: calc(26px / $base-size) + rem;
+$extra-large-size: calc(30px / $base-size) + rem;
+$huge-size: calc(80px / $base-size) + rem;
+
+$medium-line-height: calc(24px / $base-size) + rem;
+$extra-large-line-height: calc(26px / $base-size) + rem;
+$huge-line-height: calc(30px / $base-size) + rem;
+$huge-large-line-height: calc(32px / $base-size) + rem;
 
 $font-primary: var(--font-museo-sans);
