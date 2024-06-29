@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero component matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="seção de banner"
+  >
+    <div
+      class="hero-image-wrapper"
+    >
+      <img
+        alt="Equipe de colaboradores celebrando e batendo as mãos em um ambiente de escritório, destacando a cultura de trabalho colaborativa e positiva da empresa."
+        aria-label="imagem de fundo"
+        class="hero-image"
+        data-nimg="fill"
+        decoding="async"
+        fetchpriority="high"
+        sizes="100vw"
+        src="/_next/image?url=%2Fimages%2Fhero.webp&w=3840&q=100"
+        srcset="/_next/image?url=%2Fimages%2Fhero.webp&w=640&q=100 640w, /_next/image?url=%2Fimages%2Fhero.webp&w=750&q=100 750w, /_next/image?url=%2Fimages%2Fhero.webp&w=828&q=100 828w, /_next/image?url=%2Fimages%2Fhero.webp&w=1080&q=100 1080w, /_next/image?url=%2Fimages%2Fhero.webp&w=1200&q=100 1200w, /_next/image?url=%2Fimages%2Fhero.webp&w=1920&q=100 1920w, /_next/image?url=%2Fimages%2Fhero.webp&w=2048&q=100 2048w, /_next/image?url=%2Fimages%2Fhero.webp&w=3840&q=100 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+      <h1
+        aria-label="titulo emcima da imagem"
+        class="hero-image-title"
+      >
+        trabalhe no elo7
+      </h1>
+    </div>
+    <div
+      class="grid-container"
+    >
+      <p
+        aria-label="descrição da elo7"
+        class="grid-item-full-width hero-description"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et viverra orci. Praesent consequat dolor tellus, eget viverra risus hendrerit non. Sed rutrum condimentum maximus. Donec pellentesque libero eu eros sagittis.
+      </p>
+      <hr
+        aria-label="linha horizontal"
+        class="grid-item-full-width hero-horizontal-line"
+      />
+      <a
+        aria-label="vagas em aberto"
+        class="grid-item-full-width hero-button"
+        href="#open-positions"
+        role="button"
+      >
+        vagas em aberto
+      </a>
+    </div>
+  </section>
+</DocumentFragment>
+`;
