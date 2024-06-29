@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Hero from "@/components/hero";
 import "@testing-library/jest-dom";
+import { verifyAttributes } from "../utils/verifyAttributes";
 
 let container = {} as DocumentFragment;
 
@@ -35,11 +36,14 @@ describe("Hero component", () => {
     test("should render the image with correct properties", () => {
       const imageElement = screen.getByRole("img", { name: "imagem de fundo" });
       const expectedSrc = "/_next/image?url=%2Fimages%2Fhero.webp&w=3840&q=100";
-      expect(imageElement).toHaveClass("hero-image");
-      expect(imageElement).toHaveAttribute("src", expectedSrc);
-      expect(imageElement).toHaveAttribute("fetchpriority", "high");
+      const attributes = [
+        ["src", expectedSrc],
+        ["fetchpriority", "high"],
+      ];
+      verifyAttributes(imageElement, attributes);
       expect(imageElement).toHaveAttribute("srcset");
       expect(imageElement.getAttribute("srcset")).not.toBe("");
+      expect(imageElement).toHaveClass("hero-image");
     });
   });
 
