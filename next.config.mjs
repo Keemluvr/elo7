@@ -6,6 +6,7 @@ const __dirname = path.dirname(__filename);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  compress: true,
   sassOptions: {
     includePaths: [path.join(__dirname, "src", "styles")],
     prependData: `@import "@styles/main.scss";`,
