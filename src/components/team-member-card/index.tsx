@@ -14,6 +14,7 @@ export default function TeamMemberCard({ name, alt }: TeamMemberCardProps) {
       <Image
         alt={alt}
         src={`/images/team/${name}.webp`}
+        aria-label={`imagem membro da equipe: ${name}`}
         className="team-member-card-image"
         loading="lazy"
         quality={100}

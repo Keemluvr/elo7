@@ -24,7 +24,7 @@
   }
 
   &:hover > .team-member-card-image {
-    transform: scale(1.03);
+    transform: scale(1.02);
   }
 
   @include media-query("small") {
@@ -38,6 +38,6 @@
     border-radius: 16px;
     object-fit: cover;
     object-position: center;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in;
   }
 }
