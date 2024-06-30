@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Team component matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="seção da apresentação do time"
+  >
+    <div
+      class="grid-container"
+    >
+      <h2
+        class="grid-item-full-width team-title"
+      >
+        Conheça nosso time fora de série
+      </h2>
+      <div
+        class="grid-item-full-width team-content"
+      >
+        <div
+          class="team-member-card"
+        >
+          <img
+            alt="Ana, uma mulher sorrindo enquanto trabalha em um ambiente colaborativo."
+            aria-label="imagem membro da equipe: ana"
+            class="team-member-card-image"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimages%2Fteam%2Fana.webp&w=3840&q=100"
+            srcset="/_next/image?url=%2Fimages%2Fteam%2Fana.webp&w=640&q=100 640w, /_next/image?url=%2Fimages%2Fteam%2Fana.webp&w=750&q=100 750w, /_next/image?url=%2Fimages%2Fteam%2Fana.webp&w=828&q=100 828w, /_next/image?url=%2Fimages%2Fteam%2Fana.webp&w=1080&q=100 1080w, /_next/image?url=%2Fimages%2Fteam%2Fana.webp&w=1200&q=100 1200w, /_next/image?url=%2Fimages%2Fteam%2Fana.webp&w=1920&q=100 1920w, /_next/image?url=%2Fimages%2Fteam%2Fana.webp&w=2048&q=100 2048w, /_next/image?url=%2Fimages%2Fteam%2Fana.webp&w=3840&q=100 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </div>
+        <div
+          class="team-member-card"
+        >
+          <img
+            alt="João, um homem de barba ruiva e camisa branca, sorrindo com os braços cruzados em um ambiente de escritório, com duas pessoas ao fundo conversando."
+            aria-label="imagem membro da equipe: joao"
+            class="team-member-card-image"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimages%2Fteam%2Fjoao.webp&w=3840&q=100"
+            srcset="/_next/image?url=%2Fimages%2Fteam%2Fjoao.webp&w=640&q=100 640w, /_next/image?url=%2Fimages%2Fteam%2Fjoao.webp&w=750&q=100 750w, /_next/image?url=%2Fimages%2Fteam%2Fjoao.webp&w=828&q=100 828w, /_next/image?url=%2Fimages%2Fteam%2Fjoao.webp&w=1080&q=100 1080w, /_next/image?url=%2Fimages%2Fteam%2Fjoao.webp&w=1200&q=100 1200w, /_next/image?url=%2Fimages%2Fteam%2Fjoao.webp&w=1920&q=100 1920w, /_next/image?url=%2Fimages%2Fteam%2Fjoao.webp&w=2048&q=100 2048w, /_next/image?url=%2Fimages%2Fteam%2Fjoao.webp&w=3840&q=100 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </div>
+        <div
+          class="team-member-card"
+        >
+          <img
+            alt="Maria, uma mulher sorrindo enquanto segura um laptop em um ambiente de escritório moderno."
+            aria-label="imagem membro da equipe: maria"
+            class="team-member-card-image"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimages%2Fteam%2Fmaria.webp&w=3840&q=100"
+            srcset="/_next/image?url=%2Fimages%2Fteam%2Fmaria.webp&w=640&q=100 640w, /_next/image?url=%2Fimages%2Fteam%2Fmaria.webp&w=750&q=100 750w, /_next/image?url=%2Fimages%2Fteam%2Fmaria.webp&w=828&q=100 828w, /_next/image?url=%2Fimages%2Fteam%2Fmaria.webp&w=1080&q=100 1080w, /_next/image?url=%2Fimages%2Fteam%2Fmaria.webp&w=1200&q=100 1200w, /_next/image?url=%2Fimages%2Fteam%2Fmaria.webp&w=1920&q=100 1920w, /_next/image?url=%2Fimages%2Fteam%2Fmaria.webp&w=2048&q=100 2048w, /_next/image?url=%2Fimages%2Fteam%2Fmaria.webp&w=3840&q=100 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </div>
+        <div
+          class="team-member-card"
+        >
+          <img
+            alt="Pedro, um homem com cabelo cacheado e barba, usando fones de ouvido e uma camisa azul, sentado em frente a um laptop e sorrindo."
+            aria-label="imagem membro da equipe: pedro"
+            class="team-member-card-image"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimages%2Fteam%2Fpedro.webp&w=3840&q=100"
+            srcset="/_next/image?url=%2Fimages%2Fteam%2Fpedro.webp&w=640&q=100 640w, /_next/image?url=%2Fimages%2Fteam%2Fpedro.webp&w=750&q=100 750w, /_next/image?url=%2Fimages%2Fteam%2Fpedro.webp&w=828&q=100 828w, /_next/image?url=%2Fimages%2Fteam%2Fpedro.webp&w=1080&q=100 1080w, /_next/image?url=%2Fimages%2Fteam%2Fpedro.webp&w=1200&q=100 1200w, /_next/image?url=%2Fimages%2Fteam%2Fpedro.webp&w=1920&q=100 1920w, /_next/image?url=%2Fimages%2Fteam%2Fpedro.webp&w=2048&q=100 2048w, /_next/image?url=%2Fimages%2Fteam%2Fpedro.webp&w=3840&q=100 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

@@ -3,9 +3,12 @@ import { verifyAttributes } from "../utils/verifyAttributes";
 import SaleswomanReview from "@/components/saleswoman-review";
 import "@testing-library/jest-dom";
 
+let container = {} as DocumentFragment;
+
 describe("SaleswomanReview component", () => {
   beforeEach(() => {
-    render(<SaleswomanReview />);
+    const { asFragment } = render(<SaleswomanReview />);
+    container = asFragment();
   });
 
   describe("Section", () => {
@@ -87,7 +90,6 @@ describe("SaleswomanReview component", () => {
   });
 
   test("matches snapshot", () => {
-    const { container } = render(<SaleswomanReview />);
     expect(container).toMatchSnapshot();
   });
 });

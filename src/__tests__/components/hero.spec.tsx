@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
+import { verifyAttributes } from "../utils/verifyAttributes";
 import Hero from "@/components/hero";
 import "@testing-library/jest-dom";
-import { verifyAttributes } from "../utils/verifyAttributes";
 
 let container = {} as DocumentFragment;
 
