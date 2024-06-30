@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SaleswomanReview component matches snapshot 1`] = `
+<div>
+  <section
+    aria-label="seção da palavra da vendedora"
+    class="grid-container saleswoman-review-wrapper"
+  >
+    <div
+      class="grid-item-full-width saleswoman-review-content"
+    >
+      <div
+        class="saleswoman-review-image-wrapper"
+      >
+        <img
+          alt="Uma mulher jovem trabalha em uma oficina de artesanato, concentrada em suas atividades. A mesa está repleta de ferramentas e materiais de trabalho, destacando um ambiente criativo e artesanal."
+          aria-label="imagem da vendedora"
+          class="saleswoman-review-image"
+          data-nimg="fill"
+          decoding="async"
+          loading="lazy"
+          sizes="100vw"
+          src="/_next/image?url=%2Fimages%2Fsaleswoman.webp&w=3840&q=100"
+          srcset="/_next/image?url=%2Fimages%2Fsaleswoman.webp&w=640&q=100 640w, /_next/image?url=%2Fimages%2Fsaleswoman.webp&w=750&q=100 750w, /_next/image?url=%2Fimages%2Fsaleswoman.webp&w=828&q=100 828w, /_next/image?url=%2Fimages%2Fsaleswoman.webp&w=1080&q=100 1080w, /_next/image?url=%2Fimages%2Fsaleswoman.webp&w=1200&q=100 1200w, /_next/image?url=%2Fimages%2Fsaleswoman.webp&w=1920&q=100 1920w, /_next/image?url=%2Fimages%2Fsaleswoman.webp&w=2048&q=100 2048w, /_next/image?url=%2Fimages%2Fsaleswoman.webp&w=3840&q=100 3840w"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+        />
+      </div>
+      <div
+        class="saleswoman-review-description"
+      >
+        <hgroup
+          aria-label="cabecalho da avaliacao da vendedora"
+        >
+          <h2
+            class="saleswoman-review-title"
+          >
+            Palavra da vendedora
+          </h2>
+          <p
+            class="saleswoman-review-subtitle"
+          >
+            Sed rutrum condimentum
+          </p>
+        </hgroup>
+        <p>
+          Donec in vestibulum elit. Aliquam finibus facilisis elit, sit amet malesuada nibh tempor sed. Aliquam consequat ultrices fringilla. Sed id quam sollicitudin mi ultricies feugiat a vel velit. Pellentesque finibus vel tortor sed hendrerit. Vestibulum eu sem sapien. Nullam mollis, leo ut finibus euismod, arcu eros aliquam augue, in congue neque nulla vehicula purus.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
