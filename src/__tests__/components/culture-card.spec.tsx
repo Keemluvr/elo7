@@ -117,7 +117,7 @@ describe("CultureCard component", () => {
       verifyAttributes(buttonElement, attributes);
     });
 
-    test("should hidden the link when the redirectTo is undefined", () => {
+    test("should hidden the button when the redirectTo is undefined", () => {
       const { getByRole } = render(<CultureCard {...propsWithoutRedirectTo} />);
       const itemListElement = getByRole("listitem");
       expect(itemListElement).not.toHaveRole("button");

@@ -16,8 +16,10 @@ exports[`Culture component matches snapshot 1`] = `
       >
         <img
           alt="ícone de uma imagem"
+          aria-label="ícone do card de cultura"
           class="culture-card-icon"
           data-nimg="1"
+          data-testid="culture-card-icon-resultados"
           decoding="async"
           height="136"
           loading="lazy"
@@ -43,8 +45,10 @@ exports[`Culture component matches snapshot 1`] = `
       >
         <img
           alt="ícone de um polegar para cima"
+          aria-label="ícone do card de cultura"
           class="culture-card-icon"
           data-nimg="1"
+          data-testid="culture-card-icon-qualidade de vida"
           decoding="async"
           height="136"
           loading="lazy"
@@ -79,8 +83,10 @@ exports[`Culture component matches snapshot 1`] = `
       >
         <img
           alt="ícone de um cofre"
+          aria-label="ícone do card de cultura"
           class="culture-card-icon"
           data-nimg="1"
+          data-testid="culture-card-icon-nossos valores"
           decoding="async"
           height="136"
           loading="lazy"
@@ -92,7 +98,7 @@ exports[`Culture component matches snapshot 1`] = `
         <h2
           class="culture-card-title"
         >
-          Resultados
+          Nossos valores
         </h2>
         <p
           class="culture-card-description"

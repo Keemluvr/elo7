@@ -32,6 +32,8 @@ export default function CultureCard({
         quality={100}
         width={136}
         height={136}
+        aria-label="ícone do card de cultura"
+        data-testid={`culture-card-icon-${title.toLowerCase()}`}
       />
       <h2 className="culture-card-title">{title}</h2>
       <p className="culture-card-description">{description}</p>

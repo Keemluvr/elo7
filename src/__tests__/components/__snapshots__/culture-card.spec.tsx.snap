@@ -8,8 +8,10 @@ exports[`CultureCard component matches snapshot 1`] = `
   >
     <img
       alt="ícone de um polegar para cima"
+      aria-label="ícone do card de cultura"
       class="culture-card-icon"
       data-nimg="1"
+      data-testid="culture-card-icon-qualidade de vida"
       decoding="async"
       height="136"
       loading="lazy"
@@ -44,8 +46,10 @@ exports[`CultureCard component matches snapshot 1`] = `
   >
     <img
       alt="ícone de uma imagem"
+      aria-label="ícone do card de cultura"
       class="culture-card-icon"
       data-nimg="1"
+      data-testid="culture-card-icon-resultados"
       decoding="async"
       height="136"
       loading="lazy"
