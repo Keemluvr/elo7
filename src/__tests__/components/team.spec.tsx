@@ -1,44 +1,42 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { verifyAttributes } from "../utils/verifyAttributes";
 import Team from "@/components/team";
 
-let container = {} as DocumentFragment;
-
 describe("Team component", () => {
-  beforeEach(async () => {
-    const { asFragment } = await render(<Team />);
-    container = asFragment();
-  });
-
   describe("Section", () => {
+    const sectionRoleName = "seção da apresentação do time";
+
     test("should render the section component", () => {
-      const sectionElement = screen.getByRole("region", {
-        name: "seção da apresentação do time",
-      });
+      const { getByRole } = render(<Team />);
+      const sectionElement = getByRole("region", { name: sectionRoleName });
       expect(sectionElement).toBeInTheDocument();
     });
 
     test("should render the section with correct tag name", () => {
-      const sectionElement = screen.getByRole("region", {
-        name: "seção da apresentação do time",
-      });
+      const { getByRole } = render(<Team />);
+      const sectionElement = getByRole("region", { name: sectionRoleName });
       expect(sectionElement.tagName).toBe("SECTION");
     });
   });
 
   describe("Title", () => {
+    const titleText = "Conheça nosso time fora de série";
+
     test("should render the title", () => {
-      const titleElement = screen.getByText("Conheça nosso time fora de série");
+      const { getByText } = render(<Team />);
+      const titleElement = getByText(titleText);
       expect(titleElement).toBeInTheDocument();
     });
 
     test("should render the title with correct tag name", () => {
-      const titleElement = screen.getByText("Conheça nosso time fora de série");
+      const { getByText } = render(<Team />);
+      const titleElement = getByText(titleText);
       expect(titleElement.tagName).toBe("H2");
     });
 
     test("should render the title with correct properties", () => {
-      const titleElement = screen.getByText("Conheça nosso time fora de série");
+      const { getByText } = render(<Team />);
+      const titleElement = getByText(titleText);
       expect(titleElement).toHaveClass("team-title");
     });
   });
@@ -64,14 +62,16 @@ describe("Team component", () => {
     ];
 
     test.each(teamMembers)("should render the $name's photo", ({ alt }) => {
-      const teamMemberElement = screen.getByAltText(alt);
+      const { getByAltText } = render(<Team />);
+      const teamMemberElement = getByAltText(alt);
       expect(teamMemberElement).toBeInTheDocument();
     });
 
     test.each(teamMembers)(
       "should render the correct attributes for the $name's photo",
       ({ name, alt }) => {
-        const teamMemberElement = screen.getByAltText(alt);
+        const { getByAltText } = render(<Team />);
+        const teamMemberElement = getByAltText(alt);
         const attributes = [
           ["aria-label", `imagem membro da equipe: ${name}`],
           ["loading", "lazy"],
@@ -84,6 +84,7 @@ describe("Team component", () => {
   });
 
   test("matches snapshot", async () => {
-    expect(container).toMatchSnapshot();
+    const { asFragment } = render(<Team />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });

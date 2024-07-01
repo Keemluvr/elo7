@@ -2,7 +2,7 @@
 
 exports[`TeamMemberCard component matches snapshot 1`] = `
 <DocumentFragment>
-  <div
+  <li
     class="team-member-card"
   >
     <img
@@ -17,6 +17,6 @@ exports[`TeamMemberCard component matches snapshot 1`] = `
       srcset="/_next/image?url=%2Fimages%2Fteam%2Fjohn-doe.webp&w=640&q=100 640w, /_next/image?url=%2Fimages%2Fteam%2Fjohn-doe.webp&w=750&q=100 750w, /_next/image?url=%2Fimages%2Fteam%2Fjohn-doe.webp&w=828&q=100 828w, /_next/image?url=%2Fimages%2Fteam%2Fjohn-doe.webp&w=1080&q=100 1080w, /_next/image?url=%2Fimages%2Fteam%2Fjohn-doe.webp&w=1200&q=100 1200w, /_next/image?url=%2Fimages%2Fteam%2Fjohn-doe.webp&w=1920&q=100 1920w, /_next/image?url=%2Fimages%2Fteam%2Fjohn-doe.webp&w=2048&q=100 2048w, /_next/image?url=%2Fimages%2Fteam%2Fjohn-doe.webp&w=3840&q=100 3840w"
       style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
     />
-  </div>
+  </li>
 </DocumentFragment>
 `;

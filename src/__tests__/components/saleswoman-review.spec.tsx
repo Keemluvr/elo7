@@ -1,43 +1,36 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { verifyAttributes } from "../utils/verifyAttributes";
 import SaleswomanReview from "@/components/saleswoman-review";
 
-let container = {} as DocumentFragment;
-
 describe("SaleswomanReview component", () => {
-  beforeEach(() => {
-    const { asFragment } = render(<SaleswomanReview />);
-    container = asFragment();
-  });
-
   describe("Section", () => {
+    const regionName = "seção da palavra da vendedora";
+
     test("should render the section component", () => {
-      const sectionElement = screen.getByRole("region", {
-        name: "seção da palavra da vendedora",
-      });
+      const { getByRole } = render(<SaleswomanReview />);
+      const sectionElement = getByRole("region", { name: regionName });
       expect(sectionElement).toBeInTheDocument();
     });
 
     test("should render the section with correct tag name", () => {
-      const sectionElement = screen.getByRole("region", {
-        name: "seção da palavra da vendedora",
-      });
+      const { getByRole } = render(<SaleswomanReview />);
+      const sectionElement = getByRole("region", { name: regionName });
       expect(sectionElement.tagName).toBe("SECTION");
     });
   });
 
   describe("Image", () => {
+    const imageRoleName = "imagem da vendedora";
+
     test("should render the image", () => {
-      const imageElement = screen.getByRole("img", {
-        name: "imagem da vendedora",
-      });
+      const { getByRole } = render(<SaleswomanReview />);
+      const imageElement = getByRole("img", { name: imageRoleName });
       expect(imageElement).toBeInTheDocument();
     });
 
     test("should render the image with correct properties", () => {
-      const imageElement = screen.getByRole("img", {
-        name: "imagem da vendedora",
-      });
+      const { getByRole } = render(<SaleswomanReview />);
+      const imageElement = getByRole("img", { name: imageRoleName });
       const expectedSrc =
         "/_next/image?url=%2Fimages%2Fsaleswoman.webp&w=3840&q=100";
       const attributes = [
@@ -57,38 +50,46 @@ describe("SaleswomanReview component", () => {
 
   describe("Description", () => {
     describe("Title", () => {
+      const titleText = "Palavra da vendedora";
+
       test("should render the title", () => {
-        const titleElement = screen.getByText("Palavra da vendedora");
+        const { getByText } = render(<SaleswomanReview />);
+        const titleElement = getByText(titleText);
         expect(titleElement).toBeInTheDocument();
       });
 
       test("should render the title with  with correct tag name", () => {
-        const titleElement = screen.getByText("Palavra da vendedora");
+        const { getByText } = render(<SaleswomanReview />);
+        const titleElement = getByText(titleText);
         expect(titleElement.tagName).toBe("H2");
       });
 
       test("should render the title with correct properties", () => {
-        const titleElement = screen.getByRole("heading", {
-          name: "Palavra da vendedora",
-        });
+        const { getByText } = render(<SaleswomanReview />);
+        const titleElement = getByText(titleText);
         expect(titleElement).toHaveClass("saleswoman-review-title");
       });
     });
 
     describe("Subtitle", () => {
+      const subtitleText = "Sed rutrum condimentum";
+
       test("should render the subtitle", () => {
-        const subtitleElement = screen.getByText("Sed rutrum condimentum");
+        const { getByText } = render(<SaleswomanReview />);
+        const subtitleElement = getByText(subtitleText);
         expect(subtitleElement).toBeInTheDocument();
       });
 
       test("should render the subtitle with correct properties", () => {
-        const subtitleElement = screen.getByText("Sed rutrum condimentum");
+        const { getByText } = render(<SaleswomanReview />);
+        const subtitleElement = getByText(subtitleText);
         expect(subtitleElement).toHaveClass("saleswoman-review-subtitle");
       });
     });
   });
 
   test("matches snapshot", () => {
-    expect(container).toMatchSnapshot();
+    const { asFragment } = render(<SaleswomanReview />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });
