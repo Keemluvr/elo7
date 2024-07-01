@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Culture component matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="seção sobre a cultura da elo7"
+    class="grid-container grid-item-full-width-without-margin culture-wrapper"
+  >
+    <ul
+      aria-label="listagem dos valores da elo7"
+      class="grid-item-full-width culture-content"
+    >
+      <li
+        aria-label="card de cultura"
+        class="culture-card-wrapper"
+      >
+        <img
+          alt="ícone de uma imagem"
+          class="culture-card-icon"
+          data-nimg="1"
+          decoding="async"
+          height="136"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fculture%2Fgallery.webp&w=384&q=100"
+          srcset="/_next/image?url=%2Fimages%2Fculture%2Fgallery.webp&w=256&q=100 1x, /_next/image?url=%2Fimages%2Fculture%2Fgallery.webp&w=384&q=100 2x"
+          style="color: transparent;"
+          width="136"
+        />
+        <h2
+          class="culture-card-title"
+        >
+          Resultados
+        </h2>
+        <p
+          class="culture-card-description"
+        >
+          Donec in vestibulum elit. Aliquam finibus facilisis elit, sit amet malesuada nibh tempor sed. Aliquam consequat ultrices fringilla. Sed id quam sollicitudin mi ultricies feugiat a vel velit. Pellentesque finibus vel tortor sed hendrerit. Vestibulum eu sem sapien.
+        </p>
+      </li>
+      <li
+        aria-label="card de cultura"
+        class="culture-card-wrapper"
+      >
+        <img
+          alt="ícone de um polegar para cima"
+          class="culture-card-icon"
+          data-nimg="1"
+          decoding="async"
+          height="136"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fculture%2Fthumbs-up.webp&w=384&q=100"
+          srcset="/_next/image?url=%2Fimages%2Fculture%2Fthumbs-up.webp&w=256&q=100 1x, /_next/image?url=%2Fimages%2Fculture%2Fthumbs-up.webp&w=384&q=100 2x"
+          style="color: transparent;"
+          width="136"
+        />
+        <h2
+          class="culture-card-title"
+        >
+          Qualidade de vida
+        </h2>
+        <p
+          class="culture-card-description"
+        >
+          Donec in vestibulum elit. Aliquam finibus facilisis elit, sit amet malesuada nibh tempor sed. Aliquam consequat ultrices fringilla.
+        </p>
+        <a
+          class="culture-card-button"
+          href="https://www.elo7.com.br/sobre"
+          rel="noopener noreferrer"
+          role="button"
+          target="_blank"
+        >
+          dignissim quis
+        </a>
+      </li>
+      <li
+        aria-label="card de cultura"
+        class="culture-card-wrapper"
+      >
+        <img
+          alt="ícone de um cofre"
+          class="culture-card-icon"
+          data-nimg="1"
+          decoding="async"
+          height="136"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fculture%2Fvault.webp&w=384&q=100"
+          srcset="/_next/image?url=%2Fimages%2Fculture%2Fvault.webp&w=256&q=100 1x, /_next/image?url=%2Fimages%2Fculture%2Fvault.webp&w=384&q=100 2x"
+          style="color: transparent;"
+          width="136"
+        />
+        <h2
+          class="culture-card-title"
+        >
+          Resultados
+        </h2>
+        <p
+          class="culture-card-description"
+        >
+          Donec in vestibulum elit. Aliquam finibus facilisis elit, sit amet malesuada nibh tempor sed. Aliquam consequat ultrices fringilla. Sed id quam sollicitudin mi ultricies feugiat a vel velit. Pellentesque finibus vel tortor sed hendrerit. Vestibulum eu sem sapien.
+        </p>
+      </li>
+    </ul>
+  </section>
+</DocumentFragment>
+`;
