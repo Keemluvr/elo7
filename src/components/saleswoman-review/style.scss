@@ -1,12 +1,9 @@
 .saleswoman-review-wrapper {
   background-color: $secondary-background-color;
-  width: calc(100% - $side-padding * 2);
 
   .saleswoman-review-content {
+    @include grid-layout(2, center);
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
     gap: 40px;
     padding: 80px 0;
 

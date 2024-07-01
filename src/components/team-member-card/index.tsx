@@ -10,7 +10,7 @@ type TeamMemberCardProps = {
 
 export default function TeamMemberCard({ name, alt }: TeamMemberCardProps) {
   return (
-    <div className="team-member-card">
+    <li className="team-member-card">
       <Image
         alt={alt}
         src={`/images/team/${name}.webp`}
@@ -20,6 +20,6 @@ export default function TeamMemberCard({ name, alt }: TeamMemberCardProps) {
         quality={100}
         fill
       />
-    </div>
+    </li>
   );
 }

@@ -30,7 +30,3 @@ $column-width: 96px;
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-.grid-item-full-width {
-  grid-column: 1 / -1;
-}

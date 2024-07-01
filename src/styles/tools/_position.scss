@@ -4,3 +4,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin center-flex($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin grid-layout($columns: 4, $align-items: center) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  align-items: $align-items;
+}

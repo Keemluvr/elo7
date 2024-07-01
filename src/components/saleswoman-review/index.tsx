@@ -6,7 +6,7 @@ import "./style.scss";
 export default function SaleswomanReview() {
   return (
     <section
-      className="grid-container saleswoman-review-wrapper"
+      className="grid-container .grid-item-full-width-without-margin saleswoman-review-wrapper"
       aria-label="seção da palavra da vendedora"
     >
       <div className="grid-item-full-width saleswoman-review-content">

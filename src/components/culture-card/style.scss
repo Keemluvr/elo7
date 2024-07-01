@@ -1,0 +1,26 @@
+.culture-card-wrapper {
+  @include center-flex(column);
+  font-weight: 500;
+  gap: 24px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover > .culture-card-icon {
+    opacity: 0.75;
+  }
+
+  .culture-card-title {
+    font-size: $medium-size;
+    line-height: $huge-large-line-height;
+  }
+
+  .culture-card-description {
+    font-size: $small-size;
+    line-height: $extra-huge-large-line-height;
+    color: $text-color-light;
+  }
+
+  .culture-card-button {
+    font-size: $small-size;
+    line-height: $medium-line-height;
+  }
+}

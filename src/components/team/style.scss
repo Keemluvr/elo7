@@ -6,10 +6,8 @@
 }
 
 .team-content {
+  @include grid-layout(4, center);
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
   gap: 16px;
 
   @include media-query("large") {

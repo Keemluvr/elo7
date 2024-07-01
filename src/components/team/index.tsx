@@ -10,7 +10,7 @@ export default function Team() {
         <h2 className="grid-item-full-width team-title">
           Conheça nosso time fora de série
         </h2>
-        <div className="grid-item-full-width team-content">
+        <ul className="grid-item-full-width team-content">
           <TeamMemberCard
             name="ana"
             alt="Ana, uma mulher sorrindo enquanto trabalha em um ambiente colaborativo."
@@ -27,7 +27,7 @@ export default function Team() {
             name="pedro"
             alt="Pedro, um homem com cabelo cacheado e barba, usando fones de ouvido e uma camisa azul, sentado em frente a um laptop e sorrindo."
           />
-        </div>
+        </ul>
       </div>
     </section>
   );
