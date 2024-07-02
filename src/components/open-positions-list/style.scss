@@ -1,0 +1,16 @@
+.open-positions-by-type {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  .open-positions-type {
+    font-weight: 700;
+    font-size: $large-size;
+    line-height: $extra-huge-large-line-height;
+
+    @include media-query("medium") {
+      font-size: $medium-size;
+      line-height: auto;
+    }
+  }
+}

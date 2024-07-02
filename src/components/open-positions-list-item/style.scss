@@ -1,0 +1,18 @@
+.open-positions-item-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 23px 0;
+  font-weight: 500;
+  font-size: $medium-size;
+
+  span {
+    color: $text-color;
+  }
+
+  @include media-query("medium") {
+    flex-direction: column;
+    gap: 12px;
+    font-size: $small-size;
+  }
+}

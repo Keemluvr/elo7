@@ -1,0 +1,17 @@
+.sewing-banner-wrapper {
+  position: relative;
+  height: 500px;
+
+  @include media-query("medium") {
+    height: 258px;
+  }
+
+  @include media-query("xxlarge") {
+    height: 385px;
+  }
+
+  .sewing-banner-image {
+    object-position: center;
+    object-fit: cover;
+  }
+}
