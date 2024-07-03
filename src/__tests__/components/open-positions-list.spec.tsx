@@ -47,6 +47,33 @@ describe("OpenPositionsList Component", () => {
   });
 
   describe("when jobs list is not empty", () => {
+    it("should render the job list with correct list tags", () => {
+      const { getByRole, getAllByRole } = render(
+        <OpenPositionsList jobs={mockJobs} />
+      );
+
+      const listElement = getByRole("list", {
+        name: mockJobs.Engenharia[0].type,
+      });
+      expect(listElement.tagName).toBe("UL");
+
+      const listitemElement = getAllByRole("listitem", {
+        name: "vaga disponível",
+      });
+      listitemElement.forEach((item) => {
+        expect(item.tagName).toBe("LI");
+      });
+    });
+
+    it("should render the job item as a link", () => {
+      const { getAllByRole } = render(<OpenPositionsList jobs={mockJobs} />);
+
+      const linkElement = getAllByRole("link");
+      linkElement.forEach((item) => {
+        expect(item.tagName).toBe("A");
+      });
+    });
+
     it("should render all the job types, titles and locations", () => {
       const { getByText } = render(<OpenPositionsList jobs={mockJobs} />);
 
@@ -61,5 +88,10 @@ describe("OpenPositionsList Component", () => {
         });
       });
     });
+  });
+
+  test("matches snapshot", () => {
+    const { asFragment } = render(<OpenPositionsList jobs={mockJobs} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });

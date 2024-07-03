@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpenPositionsList Component matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="open-positions-by-type"
+  >
+    <h3
+      class="open-positions-type"
+    >
+      Engenharia
+    </h3>
+    <ul
+      aria-label="Engenharia"
+      class="open-positions-content-by-type"
+      data-header="vagas"
+    >
+      <li
+        aria-label="vaga disponível"
+        class="open-positions-item"
+      >
+        <a
+          class="open-positions-item-link"
+          href="#"
+        >
+          Pessoa Desenvolvedora Front-end
+          <span>
+            Rio de Janeiro, Brasil
+          </span>
+        </a>
+      </li>
+      <li
+        aria-label="vaga disponível"
+        class="open-positions-item"
+      >
+        <a
+          class="open-positions-item-link"
+          href="#"
+        >
+          Pessoa Desenvolvedora Back-end
+          <span>
+            São Paulo, Brasil
+          </span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section
+    class="open-positions-by-type"
+  >
+    <h3
+      class="open-positions-type"
+    >
+      Produto
+    </h3>
+    <ul
+      aria-label="Produto"
+      class="open-positions-content-by-type"
+      data-header="vagas"
+    >
+      <li
+        aria-label="vaga disponível"
+        class="open-positions-item"
+      >
+        <a
+          class="open-positions-item-link"
+          href="#"
+        >
+          Gerente de Produto
+          <span>
+            Remoto
+          </span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</DocumentFragment>
+`;

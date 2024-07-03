@@ -37,7 +37,11 @@ export default function OpenPositionsList({
     return (
       <section className="open-positions-by-type" key={jobByTypeIndex}>
         <h3 className="open-positions-type">{type}</h3>
-        <ul className="open-positions-content-by-type" data-header={type}>
+        <ul
+          className="open-positions-content-by-type"
+          data-header="vagas"
+          aria-label={type}
+        >
           {(list as JobTransformed[]).map(({ title, location }, index) => (
             <OpenPositionsListItem
               key={index}
