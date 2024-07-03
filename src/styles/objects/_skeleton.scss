@@ -1,0 +1,46 @@
+.skeleton-row {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.skeleton-line {
+  width: 100%;
+  min-height: 28px;
+  border-radius: 50px;
+}
+
+.skeleton-paragraph {
+  width: 100%;
+  min-height: 24px;
+  border-radius: 50px;
+  margin: 23px 0;
+}
+
+.loading-animation {
+  overflow: hidden;
+  background: $loading-background-color;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    animation: loading 1s infinite;
+    background: linear-gradient(
+      to right,
+      transparent,
+      $loading-animation-color,
+      transparent
+    );
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

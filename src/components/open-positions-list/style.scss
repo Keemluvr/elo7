@@ -1,3 +1,33 @@
+.open-positions-empty-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 120px 0;
+
+  .open-positions-empty {
+    text-align: center;
+    color: $text-color-light;
+    font-size: $small-size;
+  }
+
+  .open-positions-empty-button {
+    background-color: $button-background-color;
+    color: $button-text-color;
+    font-size: $default-size;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    transition: background-color 0.4s ease 0s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $button-background-color-hover;
+    }
+  }
+}
+
 .open-positions-by-type {
   display: flex;
   flex-direction: column;

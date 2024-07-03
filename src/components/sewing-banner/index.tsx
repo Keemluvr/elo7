@@ -6,7 +6,7 @@ import "./style.scss";
 export default function SewingBanner() {
   return (
     <section
-      className="grid-container .grid-item-full-width-without-margin sewing-banner-wrapper"
+      className="grid-container grid-item-full-width-without-margin sewing-banner-wrapper"
       aria-label="seção de banner com imagem"
     >
       <Image
