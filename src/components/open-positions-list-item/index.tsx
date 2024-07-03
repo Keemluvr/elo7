@@ -10,7 +10,7 @@ export default function OpenPositionsListItem({
   location,
 }: OpenPositionsListItemProps) {
   return (
-    <li aria-label={`vaga ${title}`} className="open-positions-item">
+    <li aria-label="vaga disponível" className="open-positions-item">
       <a href="#" className="open-positions-item-link">
         {title}
         <span>{location}</span>

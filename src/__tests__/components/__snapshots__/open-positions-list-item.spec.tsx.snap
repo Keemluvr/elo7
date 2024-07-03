@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpenPositionsListItem component matches snapshot 1`] = `
+<DocumentFragment>
+  <li
+    aria-label="vaga disponível"
+    class="open-positions-item"
+  >
+    <a
+      class="open-positions-item-link"
+      href="#"
+    >
+      Frontend Developer
+      <span>
+        São Paulo, Brazil
+      </span>
+    </a>
+  </li>
+</DocumentFragment>
+`;
