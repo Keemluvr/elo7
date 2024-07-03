@@ -1,5 +1,3 @@
-import "./style.scss";
-
 export default function OpenPositionsListSkeleton() {
   return (
     <section className="skeleton-row">
