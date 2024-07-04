@@ -17,7 +17,7 @@ const config: Config = {
   transform: {
     "^.+\\.tsx?$": "ts-jest",
   },
-  testRegex: "/__tests__/components/.*.tsx?$",
+  testRegex: "/__tests__/(components|hooks|utils)/.*.tsx?$",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   moduleNameMapper: {
     "\\.(css|less|scss|sass)$": "identity-obj-proxy",

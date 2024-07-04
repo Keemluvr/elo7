@@ -32,5 +32,6 @@ export const searchByCombinedTerms = <T>(
       filteredData[key] = filteredEntries;
     }
   }
+
   return Object.keys(filteredData).length > 0 ? filteredData : undefined;
 };

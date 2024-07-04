@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { verifyAttributes } from "../utils/verifyAttributes";
+import { verifyAttributes } from "../helpers/verifyAttributes";
 import Hero from "@/components/hero";
 
 describe("Hero component", () => {

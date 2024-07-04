@@ -34,6 +34,7 @@ export const capitalizeWords = (string: string) => {
  */
 export const formatLocation = (location: string) => {
   const [city, state, country] = location.split(", ");
+  if (!city || !country) return "";
   return `${capitalizeWords(city)}, ${capitalizeWords(country)}`;
 };
 

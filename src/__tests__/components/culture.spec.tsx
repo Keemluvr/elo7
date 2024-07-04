@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { cultureList } from "@/components/culture/culture-items";
-import { verifyAttributes } from "../utils/verifyAttributes";
+import { verifyAttributes } from "../helpers/verifyAttributes";
 import Culture from "@/components/culture";
 
 describe("Culture component", () => {

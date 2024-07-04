@@ -1,6 +1,6 @@
 import TeamMemberCard from "@/components/team-member-card";
 import { render } from "@testing-library/react";
-import { verifyAttributes } from "../utils/verifyAttributes";
+import { verifyAttributes } from "../helpers/verifyAttributes";
 
 let container = {} as DocumentFragment;
 

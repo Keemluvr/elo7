@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { verifyAttributes } from "../utils/verifyAttributes";
+import { verifyAttributes } from "../helpers/verifyAttributes";
 import CultureCard from "@/components/culture-card";
 
 describe("CultureCard component", () => {

@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { verifyAttributes } from "../utils/verifyAttributes";
+import { verifyAttributes } from "../helpers/verifyAttributes";
 import OpenPositionsListItem from "@/components/open-positions-list-item";
 
 describe("OpenPositionsListItem component", () => {
