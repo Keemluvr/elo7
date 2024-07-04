@@ -1,0 +1,27 @@
+input {
+  display: flex;
+  border-radius: 6px;
+  border: 1px solid $input-border-color;
+  background-color: transparent;
+  padding: 14px 36px 14px 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: color 0.2s;
+  font-size: $default-size;
+  line-height: $small-line-height;
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $button-border-color-hover;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &::placeholder {
+    font-size: $default-size;
+    font-family: $font-primary;
+    color: $input-placeholder-color;
+  }
+}

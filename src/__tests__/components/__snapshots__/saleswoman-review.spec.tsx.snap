@@ -4,7 +4,7 @@ exports[`SaleswomanReview component matches snapshot 1`] = `
 <DocumentFragment>
   <section
     aria-label="seção da palavra da vendedora"
-    class="grid-container .grid-item-full-width-without-margin saleswoman-review-wrapper"
+    class="grid-container grid-item-full-width-without-margin saleswoman-review-wrapper"
   >
     <div
       class="grid-item-full-width saleswoman-review-content"

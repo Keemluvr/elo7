@@ -8,7 +8,7 @@ import Link from "next/link";
 import "./style.scss";
 
 interface PositionListProps {
-  jobs: { [key: string]: JobTransformed[] };
+  jobs: { [key: string]: JobTransformed[] } | undefined;
   loading?: boolean;
 }
 
@@ -16,7 +16,7 @@ export default function OpenPositionsList({
   jobs,
   loading,
 }: PositionListProps) {
-  const jobsArray = Object.entries(jobs);
+  const jobsArray = Object.entries(jobs || {});
 
   if (loading) return <OpenPositionsListSkeleton />;
 
@@ -32,9 +32,9 @@ export default function OpenPositionsList({
       </div>
     );
 
-  return Object.entries(jobs).map((jobByType, jobByTypeIndex) => {
+  return Object.entries(jobs || {}).map((jobByType, jobByTypeIndex) => {
     const [type, list] = jobByType;
-    return (
+    return list.length ? (
       <section className="open-positions-by-type" key={jobByTypeIndex}>
         <h3 className="open-positions-type">{type}</h3>
         <ul
@@ -51,6 +51,6 @@ export default function OpenPositionsList({
           ))}
         </ul>
       </section>
-    );
+    ) : null;
   });
 }

@@ -1,13 +1,17 @@
+import Jobs from "@/services/api/jobs";
 import { JobTransformed } from "@/types/job";
+import { searchByCombinedTerms } from "@/utils/search";
 import { useEffect, useState } from "react";
 
-function useGetJobs() {
-  const [jobs, setJobs] = useState<{ [key: string]: JobTransformed[] }>({});
-  const [loading, setLoading] = useState(true);
+interface Data {
+  [key: string]: JobTransformed[];
+}
 
-  const getJobs = async (onlyActive = true) => {
-    return (await fetch(`/api/jobs?only-active=${onlyActive}`)).json();
-  };
+function useGetJobs() {
+  const [jobs, setJobs] = useState<Data>({});
+  const [filteredJobs, setFilteredJobs] = useState<Data>();
+  const [filteredTerms, setFilteredTerms] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getJobs()
@@ -15,7 +19,39 @@ function useGetJobs() {
       .finally(() => setLoading(false));
   }, []);
 
-  return { jobs, loading, getJobs };
+  useEffect(() => {
+    if (!filteredTerms) {
+      setFilteredJobs(undefined);
+      return;
+    }
+
+    const searchJobs = async (query: string) => {
+      if (!query) return;
+
+      const properties = [
+        "type",
+        "title",
+        "location",
+      ] as (keyof JobTransformed)[];
+      const filteredData = searchByCombinedTerms(jobs, query, properties);
+      setFilteredJobs(filteredData);
+    };
+
+    searchJobs(filteredTerms);
+  }, [jobs, filteredTerms]);
+
+  const getJobs = async (onlyActive = true) => {
+    return Jobs.List(onlyActive).then((data) => data);
+  };
+
+  return {
+    jobs,
+    filteredJobs,
+    loading,
+    filteredTerms,
+    setFilteredTerms,
+    getJobs,
+  };
 }
 
 export default useGetJobs;
