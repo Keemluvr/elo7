@@ -1,6 +1,6 @@
 export default function OpenPositionsListSkeleton() {
   return (
-    <section className="skeleton-row" data-testId="loading-skeleton">
+    <section className="skeleton-row" data-testid="loading-skeleton">
       <div className="skeleton-line loading-animation"></div>
       <ul className="">
         <li className="skeleton-paragraph loading-animation"></li>
