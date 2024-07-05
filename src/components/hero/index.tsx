@@ -1,16 +1,20 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
+import getLocalBase64 from "@/lib/getLocalBase64";
 import "./style.scss";
 
-export default function Hero() {
+export default async function Hero() {
+  const heroImage = "/images/hero.webp";
+  const heroImageBlurDataURL = await getLocalBase64(heroImage);
+
   return (
     <section aria-label="seção de banner">
       <div className="hero-image-wrapper">
         <Image
+          src={heroImage}
+          blurDataURL={heroImageBlurDataURL}
+          placeholder="blur"
           className="hero-image"
-          src="/images/hero.webp"
           alt="Equipe de colaboradores celebrando e batendo as mãos em um ambiente de escritório, destacando a cultura de trabalho colaborativa e positiva da empresa."
           aria-label="imagem de fundo"
           quality={100}

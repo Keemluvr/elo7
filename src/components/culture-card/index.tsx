@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./style.scss";
+import getLocalBase64 from "@/lib/getLocalBase64";
 
 type CultureCardRedirectTo = {
   label: string;
@@ -15,17 +16,20 @@ type CultureCardProps = {
   redirectTo?: CultureCardRedirectTo;
 };
 
-export default function CultureCard({
+export default async function CultureCard({
   img,
   alt,
   title,
   description,
   redirectTo,
 }: CultureCardProps) {
+  const cardImageBlurDataURL = await getLocalBase64(img);
   return (
     <li className="culture-card-wrapper" aria-label="card de cultura">
       <Image
         src={img}
+        blurDataURL={cardImageBlurDataURL}
+        placeholder="blur"
         alt={alt}
         loading="lazy"
         className="culture-card-icon"

@@ -1,5 +1,3 @@
-"use client";
-
 import TeamMemberCard from "../team-member-card";
 import "./style.scss";
 

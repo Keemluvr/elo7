@@ -1,9 +1,11 @@
-"use client";
-
 import Image from "next/image";
+import getLocalBase64 from "@/lib/getLocalBase64";
 import "./style.scss";
 
-export default function SaleswomanReview() {
+export default async function SaleswomanReview() {
+  const saleswomanImage = "/images/saleswoman.webp";
+  const saleswomanImageBlurDataURL = await getLocalBase64(saleswomanImage);
+
   return (
     <section
       className="grid-container grid-item-full-width-without-margin saleswoman-review-wrapper"
@@ -12,8 +14,10 @@ export default function SaleswomanReview() {
       <div className="grid-item-full-width saleswoman-review-content">
         <div className="saleswoman-review-image-wrapper">
           <Image
+            src={saleswomanImage}
+            blurDataURL={saleswomanImageBlurDataURL}
+            placeholder="blur"
             className="saleswoman-review-image"
-            src="/images/saleswoman.webp"
             aria-label="imagem da vendedora"
             alt="Uma mulher jovem trabalha em uma oficina de artesanato, concentrada em suas atividades. A mesa está repleta de ferramentas e materiais de trabalho, destacando um ambiente criativo e artesanal."
             quality={100}

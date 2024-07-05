@@ -1,5 +1,3 @@
-"use client";
-
 import CultureCard from "../culture-card";
 import { cultureList } from "./culture-items";
 import "./style.scss";
