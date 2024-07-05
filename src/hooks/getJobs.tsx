@@ -1,15 +1,11 @@
 import Jobs from "@/services/api/jobs";
-import { JobTransformed } from "@/types/job";
+import { JobsData, JobTransformed } from "@/types/job";
 import { searchByCombinedTerms } from "@/utils/search";
 import { useEffect, useState } from "react";
 
-interface Data {
-  [key: string]: JobTransformed[];
-}
-
 function useGetJobs() {
-  const [jobs, setJobs] = useState<Data>({});
-  const [filteredJobs, setFilteredJobs] = useState<Data>();
+  const [jobs, setJobs] = useState<JobsData>({});
+  const [filteredJobs, setFilteredJobs] = useState<JobsData>();
   const [filteredTerms, setFilteredTerms] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 

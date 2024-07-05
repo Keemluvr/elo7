@@ -11,3 +11,7 @@ export interface JobTransformed {
   title: string;
   location: string;
 }
+
+export interface JobsData {
+  [key: string]: JobTransformed[];
+}
