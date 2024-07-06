@@ -116,7 +116,7 @@ Contém os arquivos estáticos da aplicação, como ícones e imagens.
 
 #### `/src`
 
-- **`__tests__`**: Contém os testes unitários dos componentes.
+- **`/__tests__`**: Contém os testes unitários dos componentes.
 
 - `/app`: Contém o componente principal da aplicação, onde ficam estruturadas as páginas e rotas da API e sua inicialização.
 
@@ -165,4 +165,4 @@ Contém os arquivos estáticos da aplicação, como ícones e imagens.
 ## 🔨 Melhorias
 
 - Adicionar dados estruturados na estruturação da página, tais como [Job Posting](https://developers.google.com/search/docs/appearance/structured-data/job-posting), [Estimated salary](https://developers.google.com/search/docs/appearance/structured-data/estimated-salary) e [Breadcrumb](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb).
-- Para melhorar o carregamento dos ícones no mobile e em alguns browsers, pode ser criado uma sprit com os ícones,
+- Para melhorar o carregamento dos ícones no mobile e em alguns browsers, pode ser criado uma sprit com os ícones
