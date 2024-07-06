@@ -50,6 +50,14 @@ export default async function CultureCard({
           target="_blank"
         >
           {redirectTo.label}
+          <Image
+            width={24}
+            height={24}
+            src="/icons/arrow-right.svg"
+            alt="seta para direita"
+            aria-label="ícone de seta"
+            quality={100}
+          />
         </Link>
       )}
     </li>

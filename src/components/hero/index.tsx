@@ -48,6 +48,14 @@ export default async function Hero() {
           className="grid-item-full-width hero-button"
         >
           vagas em aberto
+          <Image
+            width={24}
+            height={24}
+            src="/icons/arrow-right.svg"
+            alt="seta para direita"
+            aria-label="ícone de seta"
+            quality={100}
+          />
         </Link>
       </div>
     </section>

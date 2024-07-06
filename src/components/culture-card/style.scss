@@ -22,5 +22,6 @@
   .culture-card-button {
     font-size: $small-size;
     line-height: $medium-line-height;
+    @include center-flex(row);
   }
 }
