@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watch --verbose"
+    "test:watch": "jest --watch --verbose",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@plaiceholder/next": "^3.0.0",
@@ -28,6 +29,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "babel-jest": "^29.7.0",
+    "cypress": "^13.13.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "identity-obj-proxy": "^3.0.0",
